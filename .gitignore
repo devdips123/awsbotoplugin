@@ -1,0 +1,5 @@
+__pycache__/
+test.txt
+kent_boto_aws.egg-info/
+testlogger.py
+cloudinfra_key.pem

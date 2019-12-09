@@ -1,0 +1,39 @@
+{
+    "Description": "python_sg_for_flask",
+    "GroupName": "python_sg1",
+    "IngressRules": [
+        {
+            "FromPort": 8000,
+            "IpProtocol": "tcp",
+            "ToPort": 8090,
+            "IpRanges": [
+                {
+                    "CidrIp": "0.0.0.0/0",
+                    "Description": "http"
+                }
+            ]
+        },
+        {
+            "FromPort": 80,
+            "IpProtocol": "tcp",
+            "ToPort": 80,
+            "IpRanges": [
+                {
+                    "CidrIp": "0.0.0.0/0",
+                    "Description": "http"
+                }
+            ]
+        },
+        {
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22,
+            "IpRanges": [
+                {
+                    "CidrIp": "0.0.0.0/0",
+                    "Description": "ssh"
+                }
+            ]
+        }
+    ]
+}

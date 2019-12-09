@@ -1,0 +1,13 @@
+#!/bin/sh
+
+scp -i {{inputs.key_name}}.pem -o "StrictHostKeyChecking no" ./{{inputs.script_name}}  {{inputs.username}}@{{inputs.public_ip_address}}:~ > /dev/null
+[ "$? == 0" ] && echo "bootstrap.sh successfully copied"
+ssh -i {{inputs.key_name}}.pem -o "StrictHostKeyChecking no"  {{inputs.username}}@{{inputs.public_ip_address}} "chmod +x {{inputs.script_name}}; ./{{inputs.script_name}}"
+if [ $? -eq "0" ]
+then
+    echo "[INFO] Benchmark successfully executed"
+    return 0
+else
+    echo "[ERROR] Error occurred while executing benchmark"
+    return 1
+fi

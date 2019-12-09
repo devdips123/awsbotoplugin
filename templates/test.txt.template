@@ -1,0 +1,2 @@
+My name is {{inputs.name}}
+My age is {{inputs.age}}

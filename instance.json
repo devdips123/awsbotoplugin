@@ -1,0 +1,9 @@
+{
+    "ImageId":"ami-04b9e92b5572fa0d1", 
+	"MinCount":1, 
+	"MaxCount":1,
+	"KeyName":"cloudinfra_key",
+    "InstanceType":"t2.micro",
+    "Region":"us-east-1",
+    "SecurityGroupConfigFile": "security_groups_template.json"
+}

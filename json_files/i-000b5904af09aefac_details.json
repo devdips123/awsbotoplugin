@@ -1,0 +1,141 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-04b9e92b5572fa0d1",
+                    "InstanceId": "i-000b5904af09aefac",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "cloudinfra_key",
+                    "LaunchTime": "2019-11-06 21:04:39+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-1b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-91-10.ec2.internal",
+                    "PrivateIpAddress": "172.31.91.10",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-54-161-137-82.compute-1.amazonaws.com",
+                    "PublicIpAddress": "54.161.137.82",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-8bd54ba5",
+                    "VpcId": "vpc-a05af6da",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2019-11-06 21:04:40+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0e50a521e7e46912f"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-54-161-137-82.compute-1.amazonaws.com",
+                                "PublicIp": "54.161.137.82"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2019-11-06 21:04:39+00:00",
+                                "AttachmentId": "eni-attach-08ee2c80e78e64a42",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "ssh_allow_all",
+                                    "GroupId": "sg-0decd9284b257c091"
+                                },
+                                {
+                                    "GroupName": "default",
+                                    "GroupId": "sg-7da9113d"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "12:67:9a:d3:f0:57",
+                            "NetworkInterfaceId": "eni-046830c645cf88dd5",
+                            "OwnerId": "360707710486",
+                            "PrivateDnsName": "ip-172-31-91-10.ec2.internal",
+                            "PrivateIpAddress": "172.31.91.10",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-54-161-137-82.compute-1.amazonaws.com",
+                                        "PublicIp": "54.161.137.82"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-91-10.ec2.internal",
+                                    "PrivateIpAddress": "172.31.91.10"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-8bd54ba5",
+                            "VpcId": "vpc-a05af6da",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "ssh_allow_all",
+                            "GroupId": "sg-0decd9284b257c091"
+                        },
+                        {
+                            "GroupName": "default",
+                            "GroupId": "sg-7da9113d"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    }
+                }
+            ],
+            "OwnerId": "360707710486",
+            "ReservationId": "r-0a148341396e97f7f"
+        }
+    ],
+    "ResponseMetadata": {
+        "RequestId": "771f834c-ca95-4a4c-8534-9a0f9afe8edf",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "content-type": "text/xml;charset=UTF-8",
+            "content-length": "6987",
+            "vary": "accept-encoding",
+            "date": "Wed, 06 Nov 2019 21:36:25 GMT",
+            "server": "AmazonEC2"
+        },
+        "RetryAttempts": 0
+    }
+}
